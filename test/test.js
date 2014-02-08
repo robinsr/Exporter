@@ -13,9 +13,9 @@ describe("mod1",function(){
 			assert.equal('undefined', typeof models.mod1.classMethod2())
 		})
 	})
-	describe("#classMethod3",function(){
+	describe("#getAValFromMod2",function(){
 		it("Should return 'Success'",function(){
-			assert.equal('Success', models.mod1.classMethod3())
+			assert.equal('Success', models.mod1.getAValFromMod2())
 		})
 	})
 	describe("#create",function(){

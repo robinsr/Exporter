@@ -12,9 +12,10 @@ module.exports = function(exporter) {
 			return "Success"
 		},
 		classMethod2:function(){
+			// would return 'undefined'
 			return this.name
 		},
-		classMethod3:function(){
+		getAValFromMod2:function(){
 			// accesses module 2
 			return db.mod2.getValue()
 		}
