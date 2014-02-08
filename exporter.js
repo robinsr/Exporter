@@ -4,14 +4,10 @@ a.prototype.define = function(objName, defaultProps, classMethods, instanceMetho
 	var returnObj = classMethods;
 	returnObj.create = function(){
 		var defaultCopy = {
-			name: {
-				value: objName
-			}
+			name: { value: objName }
 		}
 		for (n in defaultProps){
-			defaultCopy[n] = {
-				value: defaultProps[n]
-			}
+			defaultCopy[n] = { value: defaultProps[n] }
 		}
 		return Object.create(instanceMethods || {},defaultCopy)
 	}

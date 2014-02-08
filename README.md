@@ -33,5 +33,5 @@ module.exports = function(exporter){
 ### Features
 
 * Use methods from any model without creating circular dependencies
-* Create instnaces of models using `create()`
+* Create instances of models using `create()`
 * Instances have all the default properties and instance methods
