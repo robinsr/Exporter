@@ -3,6 +3,16 @@ var db = require(__dirname+"/main")
 module.exports = function(exporter) {
     return exporter.define("MOD1",{
     	defaultVal: "Hello",
+    	deep: {
+    		nested: {
+    			obj: "hello"
+    		}
+    	},
+    	array: [
+    		{ 
+    			ofArrays: [1,2]
+    		}
+    	],
     	defaultFunction: function(){
     		console.log("Im not sure what I am")
     	}

@@ -55,3 +55,16 @@ describe("mod2",function(){
 		});
 	});
 });
+
+describe("Reference error",function(){
+	it("Should make objects that do not share references",function(){
+		var mod1 = models.mod1.create();
+		var mod2 = models.mod1.create();
+
+		// a change in mod1's deep object should not change mod2
+		mod1.deep.nested.obj = "deep message";
+		assert.notEqual(mod1.deep.nested.obj, mod2.deep.nested.obj);
+
+
+	})
+})
