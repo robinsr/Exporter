@@ -3,6 +3,7 @@ var db = require(__dirname+"/main")
 module.exports = function(exporter) {
     return exporter.define("MOD1",{
     	defaultVal: "Hello",
+    	nullVal: null,
     	deep: {
     		nested: {
     			obj: "hello"
